@@ -36,6 +36,10 @@ main {
   margin: auto;
 }
 
+button {
+  background-color: rgb(90,111,154);
+}
+
 footer {
   text-align: center;
   border-top: 2px solid rgba(3, 13, 33, 1);
@@ -71,6 +75,15 @@ footer {
   border-top: 10px double black;
 }
 
+.contact-wrapper input, select {
+  transition: all 1s ease-out;
+}
+
+.contact-wrapper input:focus, select:focus {
+  background-color: rgb(16,35,73, .2);
+}
+
+
 .newsletter-wrapper {
   margin-top: 10px;
   border-top: 5px solid black;
@@ -80,6 +93,11 @@ footer {
   color: rgb(45,68,113);
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+  margin: 15px 0;
+}
+
+.textarea_desktop {
+  display: none;
 }
 
 .set-width {
@@ -96,10 +114,12 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 296px) {
-}
-
 @media (min-width: 768px) {
+
+  main {
+    width: 410px;
+    margin: auto;
+  }
 
   .h1 {
     font-size: 3.052rem;
@@ -114,4 +134,11 @@ footer {
     width: 120px;
   }
 
+  .textarea_mobile {
+    display: none;
+  }
+
+  .textarea_desktop {
+    display: block;
+  }
 }
