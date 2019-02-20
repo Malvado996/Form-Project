@@ -1,0 +1,24 @@
+
+header {
+  text-align: center;
+}
+
+fieldset {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  .contact {
+    display: flex;
+  }
+
+  .contact label {
+    width: 120px;
+  }
+
+}
