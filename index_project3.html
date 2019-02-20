@@ -75,7 +75,7 @@
 
             <div class="contact">
             <label for="zipcode">Zipcode:</label><br>
-            <input type="text" id="zipcode" name="user_zipcode" placeholder="zipcode" size="5"><br>
+            <input type="text" id="zipcode" name="user_zipcode" placeholder="zipcode" size="7"><br>
             </div>
 
           </fieldset>
@@ -113,9 +113,15 @@
 
           <fieldset id="topics">
 
-            <label>Other topics you'd like to hear about:</label><br>
-            <textarea name="user_topics" rows="8" cols="30" class="textarea_mobile"></textarea>
-            <textarea name="user_topics" rows="8" cols="42" class="textarea_desktop"></textarea>
+            <div class="textarea_mobile">
+              <label for="textarea_mobile">Other topics you'd like to hear about:</label><br>
+              <textarea id="textarea_mobile" name="user_topics" rows="8" cols="30"></textarea>
+            </div>
+
+            <div class="textarea_desktop">
+              <label for="textarea_desktop">Other topics you'd like to hear about:</label><br>
+              <textarea id="textarea_desktop" name="user_topics" rows="8" cols="42"></textarea>
+            </div>
 
           </fieldset>
 

@@ -45,6 +45,16 @@ footer {
   border-top: 2px solid rgba(3, 13, 33, 1);
 }
 
+select, input[type=text], input[type=email], input[type=tel], textarea {
+  border-radius: 5px;
+  box-shadow: -4px 2px 1px rgba(3, 13, 33, 1);
+}
+
+select::placeholder, input[type=text]::placeholder,
+input[type=email]::placeholder, input[type=tel]::placeholder  {
+  text-align: center;
+}
+
 #button {
   text-align: center;
 }
@@ -132,6 +142,7 @@ footer {
 
   .contact label {
     width: 120px;
+    margin-right: 8px;
   }
 
   .textarea_mobile {
